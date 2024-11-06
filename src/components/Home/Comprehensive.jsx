@@ -4,21 +4,21 @@ import { motion } from 'framer-motion';
 const newData = [
   {
     id: 1,
-    image: './public/images/homecard1.webp',
+    image: 'https://i.ibb.co.com/SKGhmCj/homecard1.webp',
     title: 'State-of-the-Art Facility',
     description: 'Our facility spans over 18,000 square meters and is equipped with advanced technology for efficient recycling of ships, ensuring minimal environmental impact.',
     
   },
   {
     id: 2,
-    image: './public/images/homecard2.webp',
+    image: 'https://i.ibb.co.com/KFCZk7y/homecard2.webp',
     title: 'ISO Certified Processes',
     description: 'We adhere to international standards, including ISO 9001, ISO 14001, and ISO 45001, demonstrating our commitment to quality and safety in every aspect of our operations.',
     
   },
   {
     id: 3,
-    image: './public/images/homecard3.webp',
+    image: 'https://i.ibb.co.com/XWqXth6/homecard3.webp',
     title: 'Expert Team',
     description: 'Our skilled workforce is trained in best practices for ship recycling and waste management, ensuring that we achieve our sustainability goals with expertise and efficiency.',
     
@@ -27,21 +27,21 @@ const newData = [
 const newData1 = [
   {
     id: 1,
-    image: './public/images/homecard1.webp',
+    image: 'https://i.ibb.co.com/SKGhmCj/homecard1.webp',
     title: 'Environmental Responsibility',
     description: 'We are committed to sustainable practices that minimize our ecological footprint. Our operations align with major international conventions and guidelines, ensuring that we contribute positively to global environmental efforts.',
     buttonText: 'Read More',
   },
   {
     id: 2,
-    image: './public/images/homecard2.webp',
+    image: 'https://i.ibb.co.com/SKGhmCj/homecard1.webp',
     title: 'Safety First',
     description: 'Our facility prioritizes safety for both our workers and the surrounding community. We implement stringent safety protocols and continuously train our staff to handle materials responsibly and safely.',
     buttonText: 'Read More',
   },
   {
     id: 3,
-    image: './public/images/homecard3.webp',
+    image: 'https://i.ibb.co.com/SKGhmCj/homecard1.webp',
     title: 'Proven Track Record',
     description: 'With a reputation as one of the finest ship recycling facilities in Bangladesh, we have successfully managed numerous projects, earning the trust of clients through our dedication to quality and compliance with industry standards.',
        buttonText: 'Read More',

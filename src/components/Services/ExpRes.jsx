@@ -4,21 +4,21 @@ import { motion } from 'framer-motion';
 const newData = [
   {
     id: 1,
-    image: './public/images/homecard1.webp',
+    image: 'https://i.ibb.co.com/SKGhmCj/homecard1.webp',
     title: 'Safety First',
     description: 'At ASBRL, we prioritize the safety of our workforce and the surrounding environment. Our shipbreaking processes adhere to the highest safety standards, ensuring that all operations are conducted with minimal risk. We implement comprehensive training programs for our staff, equipping them with the skills and knowledge needed to navigate potentially hazardous situations. Regular safety audits and inspections further reinforce our commitment to a secure working environment.',
     buttonText: 'Read More',
   },
   {
     id: 2,
-    image: './public/images/homecard2.webp',
+    image: 'https://i.ibb.co.com/KFCZk7y/homecard2.webp',
     title: 'Environmentally Responsible Practices',
     description: 'Our shipbreaking services are rooted in a commitment to environmental sustainability. We utilize advanced techniques to minimize waste and prevent pollution during the dismantling process. By employing eco-friendly methods, we ensure that all recyclable materials are handled responsibly, effectively reducing our carbon footprint and conserving natural resources. Our operations are designed to comply with international environmental standards.',
     buttonText: 'Read More',
   },
   {
     id: 3,
-    image: './public/images/homecard3.webp',
+    image: 'https://i.ibb.co.com/XWqXth6/homecard3.webp',
     title: 'Quality Metal Recovery',
     description: 'ASBRL specializes in the recovery of valuable metals from decommissioned vessels. Our state-of-the-art facilities enable us to efficiently extract ferrous and non-ferrous metals, which are then processed and prepared for reuse. This not only contributes to a circular economy but also helps reduce the demand for virgin materials. Our commitment to quality ensures that all recovered materials meet industry standards for reuse.',
        buttonText: 'Read More',
@@ -27,21 +27,21 @@ const newData = [
 const newData1 = [
   {
     id: 1,
-    image: './public/images/homecard1.webp',
+    image: 'https://i.ibb.co.com/SKGhmCj/homecard1.webp',
     title: 'Foundation of Excellence',
     description: 'Founded on December 15, 2020, Arab Shipbreaking and Recycling Limited emerged from a vision to redefine ship recycling in Bangladesh. With a commitment to environmental sustainability, our facility was established to meet the growing demand for responsible ship dismantling and waste management.',
     buttonText: 'Read More',
   },
   {
     id: 2,
-    image: './public/images/homecard2.webp',
+    image: 'https://i.ibb.co.com/KFCZk7y/homecard2.webp',
     title: 'Commitment to Sustainability',
     description: 'ASBRL prioritizes safe and environmentally sound practices, ensuring that our operations adhere to international standards. We have implemented a robust Integrated Management System compliant with ISO certifications, positioning us as a leader in green ship recycling and waste management.',
     buttonText: 'Read More',
   },
   {
     id: 3,
-    image: './public/images/homecard3.webp',
+    image: 'https://i.ibb.co.com/XWqXth6/homecard3.webp',
     title: 'Rapid Growth and Innovation',
     description: 'Since our inception, ASBRL has rapidly expanded its capabilities, achieving an impressive annual recycling capacity of 150,000 MT. Our innovative approaches and dedication to quality have earned us recognition as one of the finest ship recycling facilities in Bangladesh.',
        buttonText: 'Read More',

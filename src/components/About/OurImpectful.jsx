@@ -6,21 +6,21 @@ import { motion } from 'framer-motion';
 const newData = [
   {
     id: 1,
-    image: './public/images/homecard1.webp',
+    image: 'https://i.ibb.co.com/SKGhmCj/homecard1.webp',
     title: 'Large Vessel Dismantling',
     description: 'Successfully dismantled a large container ship, utilizing environmentally friendly methods that minimized waste and maximized material recovery, setting a benchmark for future projects.',
     
   },
   {
     id: 2,
-    image: './public/images/homecard2.webp',
+    image: 'https://i.ibb.co.com/KFCZk7y/homecard2.webp',
     title: 'Hazardous Material Management',
     description: 'Implemented a comprehensive hazardous material management project that ensured the safe removal and disposal of toxic substances, safeguarding both our workers and the environment.',
     
   },
   {
     id: 3,
-    image: './public/images/homecard3.webp',
+    image: 'https://i.ibb.co.com/XWqXth6/homecard3.webp',
     title: 'Community Engagement Initiatives',
     description: 'Conducted community engagement projects that focused on raising awareness about sustainable practices in ship recycling, fostering a culture of environmental responsibility among local stakeholders.',
     

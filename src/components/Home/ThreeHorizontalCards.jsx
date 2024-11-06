@@ -4,19 +4,19 @@ import { motion } from 'framer-motion';
 const cardData = [
   {
     id: 1,
-    image: './public/images/homecard1.webp',
+    image: 'https://i.ibb.co.com/SKGhmCj/homecard1.webp',
     title: 'State-of-the-Art Facility',
     description: 'Our facility spans over 18,000 square meters and is equipped with advanced technology for efficient recycling of ships, ensuring minimal environmental impact.',
   },
   {
     id: 2,
-    image: './public/images/homecard2.webp',
+    image: 'https://i.ibb.co.com/KFCZk7y/homecard2.webp',
     title: 'ISO Certified Processes',
     description: 'We adhere to international standards, including ISO 9001, ISO 14001, and ISO 45001, demonstrating our commitment to quality and safety in every aspect of our operations.',
   },
   {
     id: 3,
-    image: './public/images/homecard3.webp',
+    image: 'https://i.ibb.co.com/XWqXth6/homecard3.webp',
     title: 'Expert Team',
     description: 'Our skilled workforce is trained in best practices for ship recycling and waste management, ensuring that we achieve our sustainability goals with expertise and efficiency.',
   },
