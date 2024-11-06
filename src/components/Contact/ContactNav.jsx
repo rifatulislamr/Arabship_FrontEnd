@@ -54,7 +54,7 @@ const ContactNavbar = () => {
     <div className="relative h-screen overflow-hidden bg-[#c7f0e8]">
       {/* Cover Image Section */}
       <div
-        className="absolute inset-0 h-[80vh] bg-cover bg-no-repeat brightness-95"
+        className="absolute inset-0 h-[80vh] bg-cover bg-no-repeat brightness-90"
         style={{
           backgroundImage: "url('https://i.ibb.co.com/D4H56Mh/Contact-Cover.jpg')", // Replace with your image URL
           backgroundPosition: 'center', // Center the image
@@ -63,10 +63,46 @@ const ContactNavbar = () => {
           
         }}
       >
+
+
+       <div className={`fixed top-0 left-0 w-full z-20 py-4 shadow-lg transition-all ${
+    isScrolled ? 'bg-white bg-opacity-80' : 'bg-black/60'
+  } ${isMobile ? 'hidden' : 'block'}`} // Hide navbar on mobile initially
+>
+  <nav className="flex justify-between items-center px-4 font-serif text-white font-bold">
+    {/* Logo on the left side */}
+    <div className="flex items-center ">
+      <Link to="/">
+        <img
+          src="https://i.ibb.co.com/TPWyHBs/logo.jpg" // Replace with your logo URL
+          alt="Logo"
+          className=" ml-8 w-10 h-10 rounded-3xl" // Adjust the size of the logo as needed
+        />
+      </Link>
+    </div>
+
+    {/* Navbar Links Centered */}
+    <div className="flex justify-center items-center flex-grow space-x-8">
+      {['/', '/about', '/services', '/news', '/contact'].map((link) => (
+        <Link
+          to={link}
+          key={link}
+          className={`hover:text-green-400 ${
+            activeLink === link ? 'text-green-500 font-bold' : ''
+          }`}
+          onClick={() => handleLinkClick(link)}
+        >
+          {link === '/' ? 'Home' : link.charAt(1).toUpperCase() + link.slice(2)}
+        </Link>
+      ))}
+    </div>
+  </nav>
+</div>
+     
        {/* Hamburger Icon */}
 <button
   onClick={toggleSidebar}
-  className="absolute top-4 left-4 z-50 text-white bg-transparent p-2 rounded-md"
+  className="absolute top-4 left-4 z-50 text-white bg-transparent p-2 rounded-md md:hidden"
   
 >
   
@@ -74,8 +110,18 @@ const ContactNavbar = () => {
 </button>
 
 
+
         {/* Title and Contact Button */}
         <div className="flex flex-col items-center justify-center h-full text-center text-white">
+         <motion.h1
+      className="text-xl md:text-2xl font-serif  text-center text-white font-bold border-4 border-hidden border-gray-200 mb-24"
+      initial={{ opacity: 0, y: 400 }} // Start state
+      whileInView={{ opacity: 1, y: 0 }} // End state when in view
+      transition={{ duration: 0.9 }} // Animation duration
+      viewport={{ once: true }} // Trigger animation once
+    >
+           Arab Shipbreaking And Recycling Limited
+    </motion.h1>
          <motion.h1
       className="text-3xl md:text-4xl mb-4 font-serif mt-20 text-center bg-black bg-opacity-20 p-4 rounded-3xl text-white font-bold border-4 border-hidden border-gray-200"
       initial={{ opacity: 0, y: 100 }} // Start state
@@ -161,22 +207,33 @@ const ContactNavbar = () => {
       {/* Navbar visible when scrolled on md and lg screens */}
      {/* Navbar visible when scrolled on md and lg screens */}
       {(
-       <div className={`fixed top-0 left-0 w-full bg-white transition-transform duration-500 z-10 ${isScrolled ? 'translate-y-0' : '-translate-y-full'} shadow-2xl`}>
-  <nav className="relative flex items-center p-6">
-    {/* Hamburger Icon on the Left */}
-    <button onClick={toggleSidebar} className="z-20">
-      <FaBars size={20} />
-    </button>
+  <div className={`fixed top-0 left-0 w-full bg-black/60 transition-transform duration-500 z-10 ${isScrolled ? 'translate-y-0' : '-translate-y-full'} shadow-2xl`}>
+    <nav className="relative flex items-center p-6">
+      {/* Hamburger Icon on the Left */}
+      <button onClick={toggleSidebar} className="z-20 md:hidden">
+        <FaBars size={24} />
+      </button>
 
-    {/* Centered Text */}
-    <span className="absolute left-1/2 transform -translate-x-1/2 lg:text-lg md:text-sm sm:text-xs font-semibold">
-      Arab Shipbreaking And Recycling Limited
-    </span>
-  </nav>
-</div>
-
-
-      )}
+      {/* Centered Text */}
+      {!isMobile && (<span className="absolute left-1/2 transform -translate-x-1/2 lg:text-lg md:text-sm sm:text-xs">
+        <nav className="flex justify-center items-center space-x-8 font-serif text-white">
+          {['/', '/about', '/services', '/news', '/contact'].map((link) => (
+            <Link
+              to={link}
+              key={link}
+              className={`hover:text-green-400 ${
+                activeLink === link ? 'text-green-500 font-bold' : ''
+              }`}
+              onClick={() => handleLinkClick(link)}
+            >
+              {link === '/' ? 'Home' : link.charAt(1).toUpperCase() + link.slice(2)}
+            </Link>
+          ))}
+        </nav>
+      </span>)}
+    </nav>
+  </div>
+)}
     </div>
   );
 };

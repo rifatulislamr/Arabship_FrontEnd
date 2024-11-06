@@ -13,7 +13,7 @@ const newData = [
     id: 2,
     image: 'https://i.ibb.co.com/KFCZk7y/homecard2.webp',
     title: 'ISO Certified Processes',
-    description: 'We adhere to international standards, including ISO 9001, ISO 14001, and ISO 45001, demonstrating our commitment to quality and safety in every aspect of our operations.',
+    description:'We adhere to international standards, including ISO 9001, ISO 14001, and ISO 45001 demonstrating our commitment to quality and safety in every aspect of our operations.',
     
   },
   {
@@ -75,7 +75,7 @@ const Comprehensive = () => {
 
 
       
-      <div className="flex flex-col space-y-8 mx-4 sm:mx-10 md:mx-32 lg:mx-40 mt-10 ">
+      <div className="flex flex-col space-y-10 mx-4 sm:mx-10 md:mx-32 lg:mx-40 mt-10 ">
         {newData.map((card, index) => (
           <div
             key={card.id}
@@ -87,15 +87,15 @@ const Comprehensive = () => {
               src={card.image}
               alt={`Description ${card.id}`}
               className="w-full md:w-1/6 object-cover"
-              initial={{ opacity: 0, y: 100 }}
+              initial={{ opacity: 0, y: 50 }}
               whileInView={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.5 }}
               viewport={{ once: true }}
             />
             <div className="p-4 flex-1">
               <motion.h2
-                className="text-2xl md:text-xl font-sans mb-4 font-bold"
-                initial={{ opacity: 0, y: 100 }}
+                className="text-2xl md:text-xl font-sans mb-4 font-semibold"
+                initial={{ opacity: 0, y: 50 }}
                 whileInView={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.5 }}
                 viewport={{ once: true }}
@@ -104,7 +104,7 @@ const Comprehensive = () => {
               </motion.h2>
               <motion.p
                 className="text-gray-600 text-md md:text-lg"
-                initial={{ opacity: 0, y: 100 }}
+                initial={{ opacity: 0, y: 50 }}
                 whileInView={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.5 }}
                 viewport={{ once: true }}
