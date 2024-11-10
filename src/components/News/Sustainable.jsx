@@ -51,7 +51,7 @@ const Sustainable = () => {
             </motion.p>
         
       </div>
-      <div className="grid sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 p-8 lg:mx-28 mt-10">
+      <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mx-4  lg:mx-28 mt-10">
   {newData1.map((card) => (
     <motion.div
       key={card.id}
@@ -65,14 +65,14 @@ const Sustainable = () => {
         <motion.img
           src={card.image}
           alt={card.title}
-          className="w-full h-48 object-cover rounded-t-lg"
+          className="w-full h-52 object-cover rounded-t-lg"
           initial={{ opacity: 0 }}
           whileInView={{ opacity: 1 }}
           transition={{ duration: 0.5 }}
           viewport={{ once: true }}
         />
         <motion.h2
-          className="text-base font-semibold mt-4"
+          className="text-lg font-semibold mt-4"
           initial={{ opacity: 0, y: 50 }}
           whileInView={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.5 }}
@@ -81,7 +81,7 @@ const Sustainable = () => {
           {card.title}
         </motion.h2>
         <motion.p
-          className="text-gray-600 text-center mt-2 text-sm"
+          className="text-gray-600 text-center mt-2 text-"
           initial={{ opacity: 0, y: 50 }}
           whileInView={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.5 }}

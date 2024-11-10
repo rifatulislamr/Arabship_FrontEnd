@@ -4,16 +4,16 @@ import { motion } from 'framer-motion';
 const newData = [
   {
     id: 1,
-    image: 'https://i.ibb.co.com/SKGhmCj/homecard1.webp',
+    image: 'https://i.ibb.co.com/p2fQBJR/state-of-the-art.jpg',
     title: 'State-of-the-Art Facility',
-    description: 'Our facility spans over 18,000 square meters and is equipped with advanced technology for efficient recycling of ships, ensuring minimal environmental impact.',
+    description: 'Our facility, covering over 18,000 square meters, is equipped with state-of-the-art technology to enable efficient and environmentally responsible ship recycling. We utilize specialized processes to handle hazardous materials, oily substances, ferrous, and non-ferrous materials separately, ensuring safety and compliance. Our facility is fully equipped to dismantle a range of vessels, including oil tankers, roll-on/roll-off ships, container ships, and various other types, adhering to the highest standards of safety and sustainability.',
     
   },
   {
     id: 2,
     image: 'https://i.ibb.co.com/KFCZk7y/homecard2.webp',
     title: 'ISO Certified Processes',
-    description:'We adhere to international standards, including ISO 9001, ISO 14001, and ISO 45001 demonstrating our commitment to quality and safety in every aspect of our operations.',
+    description:'We are an ISO-certified facility, holding ISO 9001, ISO 14001, and ISO 45001 certifications, reflecting our commitment to quality, environmental stewardship, and workplace safety in every aspect of our operations. Additionally, we adhere to the SKC 2009 standard for shipbreaking, ensuring compliance with stringent international guidelines for responsible and safe dismantling practices.',
     
   },
   {
@@ -27,23 +27,23 @@ const newData = [
 const newData1 = [
   {
     id: 1,
-    image: 'https://i.ibb.co.com/SKGhmCj/homecard1.webp',
-    title: 'Environmental Responsibility',
-    description: 'We are committed to sustainable practices that minimize our ecological footprint. Our operations align with major international conventions and guidelines, ensuring that we contribute positively to global environmental efforts.',
+    image: 'https://i.ibb.co.com/GQPsQs7/environment-res.jpg',
+    title: 'Environmental Responsiblity',
+    description: 'At our facility, we adhere strictly to government rules and regulations for ship recycling. Upon the ship&apos;s arrival, we conduct an Inventory of Hazardous Materials (IHM) to identify and catalog any potential risks. Using the IHM data, we then develop a Ship Recycling Plan (SRP) and an Environmental Management Plan (EMP), which are submitted to the Ministry for approval prior to the recycling process. We prioritize worker and environmental safety by taking stringent precautions to minimize hazardous material exposure. Our Integrated Management System (IMS) policy mandates regular training for all workers and employees, provided both by external experts and our in-house teams.Once the IHM is completed, all identified hazardous materials are carefully removed and securely stored in our dedicated hazardous material storage facilities, which are approved by the Department of Environment. From there, materials are transported to government-approved Treatment, Storage, and Disposal Facilities (TSDF) in compliance with regulatory standards.',
     buttonText: 'Read More',
   },
   {
     id: 2,
-    image: 'https://i.ibb.co.com/SKGhmCj/homecard1.webp',
-    title: 'Safety First',
-    description: 'Our facility prioritizes safety for both our workers and the surrounding community. We implement stringent safety protocols and continuously train our staff to handle materials responsibly and safely.',
+    image: 'https://i.ibb.co.com/xh187vf/work-facilities.jpg',
+    title: 'Employee Facilities',
+    description: 'Our commitment to employee well-being is reflected in the comprehensive facilities and benefits we provide. All employees receive wages in full compliance with government labor laws. We offer access to medical facilities and ensure that each worker is equipped with job-specific personal protective equipment to promote safety. Additionally, we provide recreational areas, access to pure drinking water, and a range of training opportunities, both internal and external, to support skill development and ensure a safe, fulfilling work environment.',
     buttonText: 'Read More',
   },
   {
     id: 3,
-    image: 'https://i.ibb.co.com/SKGhmCj/homecard1.webp',
-    title: 'Proven Track Record',
-    description: 'With a reputation as one of the finest ship recycling facilities in Bangladesh, we have successfully managed numerous projects, earning the trust of clients through our dedication to quality and compliance with industry standards.',
+    image: 'https://i.ibb.co.com/zrfMSBy/Safety-First.jpg',
+    title: 'Safety First',
+    description: 'Our facility is dedicated to maintaining the highest safety standards through comprehensive protective measures and protocols. Access to the site is strictly restricted to individuals wearing appropriate safety gear. All office staff, workers, and visitors are provided with basic safety familiarization before entering the yard, with visitors receiving a specific briefing to ensure safe conduct. Risks are managed proactively through detailed risk assessment analyses, both for the facility and incoming vessels. We conduct regular mock drills as part of an established plan, reinforcing emergency preparedness for all staff. Our fire safety protocols include strategically placed fire extinguishers, dedicated fire pumps with water tanks, and clearly marked hydrants to enable a rapid response. Emergency evacuation routes are available throughout the facility to ensure swift and safe egress in case of an incident. Additionally, we follow specific operational control procedures (OCPs) tailored to various job functions, ensuring that all tasks are performed under strict safety controls and regulations.',
        buttonText: 'Read More',
   },
 ];
@@ -62,7 +62,7 @@ const Comprehensive = () => {
                Comprehensive Ship Recycling Services
               </motion.h2>
         <motion.p
-              className="text-gray-600 text-base md:text-xl text-center"
+              className="text-gray-600 text-base md:text-xl text-center mx-3"
               initial={{ opacity: 0, y: 50 }} // Start state
               whileInView={{ opacity: 1, y: 0 }} // End state when in view
               transition={{ duration: 0.5 }} // Animation duration
@@ -75,24 +75,24 @@ const Comprehensive = () => {
 
 
       
-      <div className="flex flex-col space-y-10 mx-4 sm:mx-10 md:mx-32 lg:mx-40 mt-10 ">
+      <div className="flex flex-col space-y-10  md:mx-32 lg:mx-20 mt-10 mx-auto">
         {newData.map((card, index) => (
           <div
             key={card.id}
-            className={`flex flex-col md:flex-row items-center mx-8 ${
+            className={`flex flex-col md:flex-row items-center mx-auto lg:mx-20  ${
               index % 2 === 0 ? '' : 'md:flex-row-reverse'
             }  rounded-lg overflow-hidden  p-4`}
           >
             <motion.img
               src={card.image}
               alt={`Description ${card.id}`}
-              className="w-full md:w-1/6 object-cover"
+              className="w-full md:w-1/6 object-cover "
               initial={{ opacity: 0, y: 50 }}
               whileInView={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.5 }}
               viewport={{ once: true }}
             />
-            <div className="p-4 flex-1">
+            <div className="p-4 flex-1 ">
               <motion.h2
                 className="text-2xl md:text-xl font-sans mb-4 font-semibold"
                 initial={{ opacity: 0, y: 50 }}
@@ -118,7 +118,7 @@ const Comprehensive = () => {
 
 <div className="flex flex-col justify-center items-center max-w-7xl mx-auto">
         <motion.h2
-                className="mt-20 font-serif text-4xl text-center mb-6"
+                className="mt-20 font-serif text-4xl text-center mb-6 "
                 initial={{ opacity: 0, y: 100 }}
                 whileInView={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.5 }}
@@ -127,7 +127,7 @@ const Comprehensive = () => {
               Your Trusted Partner in Ship Recycling
               </motion.h2>
         <motion.p
-              className="text-gray-600 text-base md:text-xl text-center"
+              className="text-gray-600 text-base md:text-xl text-center mx-3"
               initial={{ opacity: 0, y: 50 }} // Start state
               whileInView={{ opacity: 1, y: 0 }} // End state when in view
               transition={{ duration: 0.5 }} // Animation duration
@@ -143,7 +143,7 @@ const Comprehensive = () => {
         
 
       </div> */}
-      <div className="grid grid-cols-1 md:grid-cols-3 gap-8 p-8 lg:mx-28 mt-10">
+      <div className="grid grid-cols-1 md:grid-cols-3 gap-8  mx-6 lg:mx-32 mt-10">
   {newData1.map((card) => (
     <motion.div
       key={card.id}
@@ -157,14 +157,14 @@ const Comprehensive = () => {
         <motion.img
           src={card.image}
           alt={card.title}
-          className="w-full h-48 object-cover rounded-t-lg"
+          className="w-full h-52 object-cover rounded-t-lg"
           initial={{ opacity: 0 }}
           whileInView={{ opacity: 1 }}
           transition={{ duration: 0.5 }}
           viewport={{ once: true }}
         />
         <motion.h2
-          className="text-base font-semibold mt-4"
+          className="lg:text-xl text-2xl font-semibold mt-4"
           initial={{ opacity: 0, y: 50 }}
           whileInView={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.5 }}
@@ -173,7 +173,7 @@ const Comprehensive = () => {
           {card.title}
         </motion.h2>
         <motion.p
-          className="text-gray-600 text-center mt-2 text-sm"
+          className="text-gray-600 text-center mt-2 lg:text-md md:text-lg text-lg"
           initial={{ opacity: 0, y: 50 }}
           whileInView={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.5 }}

@@ -23,14 +23,14 @@ const cardData = [
 
 const RecentShip = () => {
   return (
-    <div className='mx-10 mb-40 lg:p-16'>
+    <div className='mx-4  lg:mx-40  lg:mb-40 mb-20 mt-10'>
       <div 
-        className='grid gap-32 lg:gap-6 grid-cols-1 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3'
+        className='grid gap-10 lg:gap-6 grid-cols-1 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3'
       >
         {cardData.map((card) => (
           <div 
             key={card.id} 
-            className='relative overflow-hidden rounded-lg w-4/5 h-[160%] mx-auto'
+            className='relative overflow-hidden rounded-lg w-4/5 lg:h-[160%] mx-auto'
           >
             {/* Full Card as Image */}
             <img

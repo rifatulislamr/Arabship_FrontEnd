@@ -4,21 +4,21 @@ import { motion } from 'framer-motion';
 const newData1 = [
   {
     id: 1,
-    image: 'https://i.ibb.co.com/SKGhmCj/homecard1.webp',
+    image: 'https://i.ibb.co.com/L67V61K/foundation-of-excellence.jpg',
     title: 'Foundation of Excellence',
     description: 'Founded on December 15, 2020, Arab Shipbreaking and Recycling Limited emerged from a vision to redefine ship recycling in Bangladesh. With a commitment to environmental sustainability, our facility was established to meet the growing demand for responsible ship dismantling and waste management.',
     buttonText: 'Read More',
   },
   {
     id: 2,
-    image: 'https://i.ibb.co.com/KFCZk7y/homecard2.webp',
+    image: 'https://i.ibb.co.com/P6LdqLg/commitment-to-sustainablity.jpg',
     title: 'Commitment to Sustainability',
     description: 'ASBRL prioritizes safe and environmentally sound practices, ensuring that our operations adhere to international standards. We have implemented a robust Integrated Management System compliant with ISO certifications, positioning us as a leader in green ship recycling and waste management.',
     buttonText: 'Read More',
   },
   {
     id: 3,
-    image: 'https://i.ibb.co.com/XWqXth6/homecard3.webp',
+    image: 'https://i.ibb.co.com/JrZDXh3/rapid-growth.jpg',
     title: 'Rapid Growth and Innovation',
     description: 'Since our inception, ASBRL has rapidly expanded its capabilities, achieving an impressive annual recycling capacity of 150,000 MT. Our innovative approaches and dedication to quality have earned us recognition as one of the finest ship recycling facilities in Bangladesh.',
        buttonText: 'Read More',
@@ -65,14 +65,14 @@ const OurJourney = () => {
         <motion.img
           src={card.image}
           alt={card.title}
-          className="w-full h-48 object-cover rounded-t-lg"
+          className="w-full h-52 object-cover rounded-t-lg"
           initial={{ opacity: 0 }}
           whileInView={{ opacity: 1 }}
           transition={{ duration: 0.5 }}
           viewport={{ once: true }}
         />
         <motion.h2
-          className="text-base font-semibold mt-4"
+          className="text-lg font-semibold mt-4"
           initial={{ opacity: 0, y: 50 }}
           whileInView={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.5 }}
@@ -81,7 +81,7 @@ const OurJourney = () => {
           {card.title}
         </motion.h2>
         <motion.p
-          className="text-gray-600 text-center mt-2 text-sm"
+          className="text-gray-600 text-center mt-2 text-"
           initial={{ opacity: 0, y: 50 }}
           whileInView={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.5 }}

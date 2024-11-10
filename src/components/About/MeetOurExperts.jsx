@@ -6,7 +6,7 @@ import { motion } from 'framer-motion';
 const newData = [
   {
     id: 1,
-    image: 'https://i.ibb.co.com/SKGhmCj/homecard1.webp',
+    image: 'https://i.ibb.co.com/Lz9N8Bz/servicecover.jpg',
     title: 'Leadership',
     description: 'Our leadership team comprises seasoned professionals with extensive experience in ship recycling and environmental management, guiding ASBRL towards achieving its strategic goals.',
     
@@ -56,7 +56,7 @@ const MeetOurExperts = () => {
       </div>
 
 
-       <div className="flex flex-col space-y-8 mx-4 sm:mx-10 md:mx-32 lg:mx-28 mt-10 ">
+       <div className="flex flex-col space-y-8 mx-auto  md:mx-20 lg:mx-28 mt-10 ">
         {newData.map((card, index) => (
           <div
             key={card.id}
@@ -67,7 +67,7 @@ const MeetOurExperts = () => {
             <motion.img
               src={card.image}
               alt={`Description ${card.id}`}
-              className="w-full md:w-1/4 object-cover"
+              className="w-full lg:h-40  rounded-md md:w-1/4 object-cover"
               initial={{ opacity: 0, y: 100 }}
               whileInView={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.5 }}
