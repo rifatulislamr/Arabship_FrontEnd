@@ -26,7 +26,7 @@
 //             >
 //           Find us easily with the following details.
 //             </motion.p>
-        
+
 //       </div>
 //       {/* <div className="grid sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 p-8 mx-4 lg:mx-28 mt-10">
 //   {newData1.map((card) => (
@@ -81,7 +81,7 @@
 // </div> */}
 //     <section className="bg-gray-100 py-10 px-6 md:px-12 lg:px-24 rounded-lg shadow-md">
 //       <div className="text-center mb-8">
-        
+
 //       </div>
 //       <div className="bg-white p-6 rounded-lg shadow-md">
 //         <div className="text-center mb-4">
@@ -117,7 +117,7 @@
 //     </section>
 
 //     </div>
- 
+
 //   )
 // }
 
@@ -166,7 +166,7 @@
 //             Your Full Address Here
 //           </p>
 //         </div>
-        
+
 //         <div className="flex flex-col md:flex-row items-center justify-center gap-4 mt-8">
 //           <motion.a
 //             href="tel:+8801876980021"
@@ -241,7 +241,7 @@ const OurLocation = () => {
             Your Full Address Here
           </p>
         </div>
-        
+
         <div className="flex flex-col md:flex-row items-center justify-center gap-4 mt-8">
           <motion.a
             href="tel:+8801876980021"
@@ -275,11 +275,9 @@ const OurLocation = () => {
             whileInView={{ opacity: 1 }}
             transition={{ duration: 0.5 }}
           >
-            Ambassador Visit to Arab Shipyard and Recycling Limited
+            Arab Shipyard and Recycling Limited
           </motion.h3>
-          <p className="text-gray-700 text-lg text-center mt-4">
-            On December 31, 2024, the Norwegian Ambassador to Bangladesh, <span className="font-bold">Mr. Håkon Arald Gulbrandsen</span>, visited Arab Shipyard and Recycling Limited. He was accompanied by Deputy Head of Mission <span className="font-bold">Ms. Marianne Rave Knaevalsrud</span> and <span className="font-bold">Mr. Morshed Ahmed</span>, Senior Advisor at the Royal Norwegian Embassy. During the visit, Ambassador Gulbrandsen explored the shipyard's facilities and expressed his satisfaction with the infrastructure and services provided by the shipyard.
-          </p>
+
         </section>
       </section>
     </div>

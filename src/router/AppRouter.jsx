@@ -7,6 +7,7 @@ import Services from '../pages/Services';
 import News from '../pages/News';
 import Contact from '../pages/Contact';
 import Layout from '../components/Layout';
+import NewsDetails from '../components/News/NewsDetails';
 
 const AppRouter = () => {
   return (
@@ -17,6 +18,7 @@ const AppRouter = () => {
           <Route path="/about" element={<About />} />
           <Route path="/services" element={<Services />} />
           <Route path="/news" element={<News />} />
+          <Route path="/news-details/:id" element={<NewsDetails />} />
           <Route path="/contact" element={<Contact />} />
         </Routes>
       </Layout>
